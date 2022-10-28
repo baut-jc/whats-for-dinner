@@ -23,23 +23,24 @@ header {
     max-width: 100%;
 }
 
-form {
+.food-generator {
     display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-evenly;
+    margin: 36px;
+   
 }
 
 div {
-    margin: 20;
-    padding: 50;
     background-color: #95a5a6;
-    padding: 100px;
-    width: 100;
+    width: 35vh;
+    height: 35vh;
+    margin: inherit;
 }
 
 .result-img {
-    height: 2in;
+    height: 1in;
 }
 
 /* div.background {
