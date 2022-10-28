@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
     font-family: 'Roboto', sans-serif, black;
     border: 1px solid black; 
 }
@@ -36,8 +35,20 @@ div {
     background-color: #95a5a6;
     width: 35vh;
     height: 35vh;
+    text-align: center;
     margin: inherit;
 }
+
+.hidden{
+    display: none
+}
+
+.result {
+display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+} 
 
 .result-img {
     height: 1in;
