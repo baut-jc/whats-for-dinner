@@ -5,9 +5,14 @@ var mainsButton = document.querySelector('#main-dish');
 var dessertsButton = document.querySelector('#dessert');
 var entireMealButton = document.querySelector('#entire-meal');
 var letsCookBtn = document.querySelector('#lets-cook')
+var potImage = document.querySelector('.result-img')
+var mealIntro = document.querySelector('.intro-to-meal')
+var foodResult = document.querySelector('.food-result')
+var clearBtn = document.querySelector('.clear-btn')
 
 //Event Listeners
 letsCookBtn.addEventListener('click', cookThis);
+clearBtn.addEventListener('click', refreshFood)
 
 //Global Variables
 var sideDishes = [ 
@@ -69,13 +74,23 @@ function cookThis() {
     var randomDessert = Math.floor(Math.random() * desserts.length);
     console.log('dessert: ', randomDessert)
     if (sidesButton.checked) {
-        return sideDishes[randomSideDish]
+        foodResult.innerText = `${sideDishes[randomSideDish]}!`
+        // console.log(`${sideDishes[randomSideDish]}!`)
     } else if (mainsButton.checked) {
-        return mainDishes[randomMainDish]
+        foodResult.innerText = `${mainDishes[randomMainDish]}!`
+        // console.log(`${mainDishes[randomMainDish]}!`)
     } else if (dessertsButton.checked) {
-        return desserts[randomDessert]
+        foodResult.innerText = `${desserts[randomDessert]}!`
     } else {
-        return `${mainDishes[randomMainDish]} with a side of ${sideDishes[randomSideDish]} and ${desserts[randomDessert]}`)
+        foodResult.innerText = `${mainDishes[randomMainDish]} with a side of ${sideDishes[randomSideDish]} and ${desserts[randomDessert]}!`
     }
+    potImage.classList.add('hidden')
+    mealIntro.classList.remove('hidden')
+    foodResult.classList.remove('hidden')
+    clearBtn.classList.remove('hidden')
+
+    
+
+        //add hidden to result image class.
 }
 
