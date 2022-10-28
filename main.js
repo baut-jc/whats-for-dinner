@@ -7,12 +7,10 @@ var entireMealButton = document.querySelector('#entire-meal');
 var letsCookBtn = document.querySelector('#lets-cook')
 
 //Event Listeners
-// selections.addEventListener('change', selectCategory);
 letsCookBtn.addEventListener('click', cookThis);
-// sidesButton.addEventListener('click')
 
 //Global Variables
-var sideDishes = [ //randomize
+var sideDishes = [ 
     'Miso Glazed Carrots',
     'Coleslaw',
     'Garden Salad',
@@ -59,16 +57,9 @@ var desserts = [
     'Croissants',
     'Eclairs'
 ];
-var entireMeal = [] //else; random
+var entireMeal = [] 
 
-// if a sidesButton is selected; iterate over the sidesDishes Array.
-// else if mainsButton to iterate over mainDishes
-// else if dessertsButton to iterate over desserts
-// else iterate an object with 3 different properties.
-// function randomFood(foodCategory)
-//     var randomDish = Math.floor(Math.random() * array.length);
-//     return 
-
+//Functions
 function cookThis() {
     event.preventDefault()
     var randomSideDish = Math.floor(Math.random() * sideDishes.length);
@@ -80,24 +71,11 @@ function cookThis() {
     if (sidesButton.checked) {
         return sideDishes[randomSideDish]
     } else if (mainsButton.checked) {
-        console.log('cookm MAIN: ', mainDishes[randomMainDish])
+        return mainDishes[randomMainDish]
     } else if (dessertsButton.checked) {
-        console.log('cookm SWEETS: ', desserts[randomDessert])
+        return desserts[randomDessert]
     } else {
-        console.log('FOOOOOOOOOOOD!')
+        return `${mainDishes[randomMainDish]} with a side of ${sideDishes[randomSideDish]} and ${desserts[randomDessert]}`)
     }
 }
 
-// function selectCategory() {
-//     for(var i = 0; i < selections.length; i++) {
-//         console.log(selections)
-//     }
-// }
-
-//create a function 
-//radio button
-//random message will invoke 
-//2 conditionals to access 2 arrays. .innerText and hide and show in the same function.
-
-//create an array that all arrays
-    //create var names of all other array. = to each arrays.
