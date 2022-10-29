@@ -1,7 +1,6 @@
 * {
     margin: 0;
     font-family: 'Roboto', sans-serif, black;
-    border: 1px solid black; 
 }
 
 body {
@@ -22,29 +21,50 @@ header {
     max-width: 100%;
 }
 
+button {
+    background:  #0fb9b1;
+    display: flex;
+    width: auto;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: grey;
+    color: white;
+  }
+
+
 .food-generator {
     display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-evenly;
     margin: 36px;
-   
 }
 
 div {
-    background-color: #95a5a6;
-    width: 35vh;
-    height: 35vh;
-    text-align: center;
+    background-color: white;
+    opacity: 88%;
+    width: 66vh;
+    height: 46vh;
+    text-align: left;
+    justify-content: center;
     margin: inherit;
+    padding: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+label {
+    font-size: 12px;
 }
 
 .hidden{
     display: none
 }
 
-.result {
-display: flex;
+div.result {
+    display: flex;
     flex-direction: column;
     align-content: stretch;
     justify-content: center;
@@ -52,6 +72,25 @@ display: flex;
 
 .result-img {
     height: 1in;
+    position: absolute;
+}
+
+.intro-to-meal {
+    font-size: small;
+    font-style: italic;
+}
+
+.food-result {
+    text-align: center;
+}
+
+.clear-btn {
+    float: right;
+    background:  grey;
+    align-self: flex-end;
+    float: right;
+    width: auto;
+    border-radius: 4px;
 }
 
 /* div.background {

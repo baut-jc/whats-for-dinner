@@ -1,9 +1,10 @@
 // Query Selectors
-var selections = document.getElementsByClassName('food-category');
+var selections = document.getElementsByClassName('food-generator');
 var sidesButton = document.querySelector('#side-dish');
 var mainsButton = document.querySelector('#main-dish');
 var dessertsButton = document.querySelector('#dessert');
 var entireMealButton = document.querySelector('#entire-meal');
+var alert = document.querySelector('.alert')
 var letsCookBtn = document.querySelector('#lets-cook')
 var potImage = document.querySelector('.result-img')
 var mealIntro = document.querySelector('.intro-to-meal')
@@ -12,7 +13,7 @@ var clearBtn = document.querySelector('.clear-btn')
 
 //Event Listeners
 letsCookBtn.addEventListener('click', cookThis);
-clearBtn.addEventListener('click', refreshFood)
+clearBtn.addEventListener('click', refreshGenerator)
 
 //Global Variables
 var sideDishes = [ 
@@ -67,6 +68,7 @@ var entireMeal = []
 //Functions
 function cookThis() {
     event.preventDefault()
+    // selections.classList = ''
     var randomSideDish = Math.floor(Math.random() * sideDishes.length);
     console.log('sideDish: ', randomSideDish)
     var randomMainDish = Math.floor(Math.random() * mainDishes.length);
@@ -75,22 +77,25 @@ function cookThis() {
     console.log('dessert: ', randomDessert)
     if (sidesButton.checked) {
         foodResult.innerText = `${sideDishes[randomSideDish]}!`
-        // console.log(`${sideDishes[randomSideDish]}!`)
+        alert.classList.add('hidden')
     } else if (mainsButton.checked) {
         foodResult.innerText = `${mainDishes[randomMainDish]}!`
-        // console.log(`${mainDishes[randomMainDish]}!`)
+        alert.classList.add('hidden')
     } else if (dessertsButton.checked) {
         foodResult.innerText = `${desserts[randomDessert]}!`
+        alert.classList.add('hidden')
+    } else if (entireMealButton.checked) {
+        foodResult.innerText = `${mainDishes[randomMainDish]} with a side of ${sideDishes[randomSideDish]} and ${desserts[randomDessert]} for dessert!`
     } else {
-        foodResult.innerText = `${mainDishes[randomMainDish]} with a side of ${sideDishes[randomSideDish]} and ${desserts[randomDessert]}!`
+        alert.classList.remove('hidden')
+        selections.reset()
     }
     potImage.classList.add('hidden')
     mealIntro.classList.remove('hidden')
     foodResult.classList.remove('hidden')
     clearBtn.classList.remove('hidden')
-
-    
-
-        //add hidden to result image class.
 }
 
+function refreshGenerator() {
+    // selections.classList = ''
+}  
