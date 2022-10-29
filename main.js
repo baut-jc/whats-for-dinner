@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 // Query Selectors
 // Display
 var selections = document.getElementsByClassName('food-generator');
@@ -107,5 +105,3 @@ function clearForm() {
     clearBtn.classList.add('hidden')
     radioBtns.input.checked === false;
 }  
-
->>>>>>> Stashed changes
