@@ -65,6 +65,15 @@ var desserts = [
 var entireMeal = [] 
 
 //Functions
+function refreshFood() {
+    // as opposed to the function
+         potImage.classList.add('hidden')
+         mealIntro.classList.remove('hidden')
+         foodResult.classList.remove('hidden')
+         clearBtn.classList.remove('hidden')
+
+ }
+
 function cookThis() {
     event.preventDefault()
     var randomSideDish = Math.floor(Math.random() * sideDishes.length);
@@ -76,11 +85,11 @@ function cookThis() {
     if (sidesButton.checked) {
         foodResult.innerText = `${sideDishes[randomSideDish]}!`
     } else if (mainsButton.checked) {
-        foodResult.innerText = `${mainDishes[randomMainDish]}`
+        foodResult.innerText = `${mainDishes[randomMainDish]}!`
     } else if (dessertsButton.checked) {
         foodResult.innerText = `${desserts[randomDessert]}!`
     } else {
-        foodResult.innerText = `${mainDishes[randomMainDish]} with a side of ${sideDishes[randomSideDish]} and ${desserts[randomDessert]}!`
+        foodResult.innerText = `${mainDishes[randomMainDish]} with a side of ${sideDishes[randomSideDish]} and ${desserts[randomDessert]} for dessert!`
     }
     potImage.classList.add('hidden')
     mealIntro.classList.remove('hidden')
@@ -88,12 +97,4 @@ function cookThis() {
     clearBtn.classList.remove('hidden')
 }
 
-function refreshFood() {
-   // as opposed to the function
-        // potImage.classList.add('hidden')
-        // mealIntro.classList.remove('hidden')
-        // foodResult.classList.remove('hidden')
-        // clearBtn.classList.remove('hidden')
-    //if clear //
-}
     
