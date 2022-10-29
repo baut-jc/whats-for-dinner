@@ -22,11 +22,16 @@ header {
 }
 
 button {
-background:  #0fb9b1;
-display: flex;
-width: 108px;
-border-radius: 4px;
+    background:  #0fb9b1;
+    display: flex;
+    width: auto;
+    border-radius: 4px;
 }
+
+.button:hover {
+    background-color: grey;
+    color: white;
+  }
 
 
 .food-generator {
@@ -43,6 +48,7 @@ div {
     width: 66vh;
     height: 46vh;
     text-align: left;
+    justify-content: center;
     margin: inherit;
     padding: 25px;
     flex-wrap: wrap;
@@ -66,6 +72,7 @@ div.result {
 
 .result-img {
     height: 1in;
+    position: absolute;
 }
 
 .intro-to-meal {
@@ -80,6 +87,8 @@ div.result {
 .clear-btn {
     float: right;
     background:  grey;
+    align-self: flex-end;
+    float: right;
     width: auto;
     border-radius: 4px;
 }

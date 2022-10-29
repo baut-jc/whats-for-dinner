@@ -10,9 +10,10 @@
       <h3>What's for Dinner?</h3>
       <button id="add-button">ADD A RECIPE</button>
     </header>
-    <section class="food-generator">
+    <section class="food-generator reset">
       <div class="category-selection"> 
-          <span><h3>What are you looking for?*</h3></span><br>
+          <span><h3>What are you looking for?<span style="color:red">*</span></h3></span>
+          <span><p class="alert hidden" style="color:red"><small>You must select a food category.</small></p></span><br>
           <span><input type="radio" id="side-dish" value="side-dish" name="selector">
           <label for="side-dish">Side</label></span><br><br>
           <span><input type="radio" id="main-dish" value="main-dish" name="selector">
@@ -26,7 +27,7 @@
       <div class= "result">
           <img src="./assets/cookpot.svg" alt="Cookpot" class="result-img">   
           <h3 class="intro-to-meal hidden">You should make:</h3><br>
-          <span><p class="food-result hidden">Food!</p></span><br><br>
+          <span><p class="food-result hidden">....a selection, please!</p></span><br><br>
           <button class="clear-btn hidden">CLEAR</button>
       </div>
   </body>
