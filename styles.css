@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
     font-family: 'Roboto', sans-serif, black;
     border: 1px solid black; 
 }
@@ -40,21 +39,31 @@ border-radius: 4px;
 }
 
 div {
+<<<<<<< HEAD
     background-color: white;
     opacity: 88%;
     width: 66vh;
     height: 46vh;
     text-align: left;
+=======
+    background-color: #95a5a6;
+    width: 35vh;
+    height: 35vh;
+    text-align: center;
+>>>>>>> main
     margin: inherit;
     padding: 25px;
     flex-wrap: wrap;
     align-items: center;
 }
 
+<<<<<<< HEAD
 label {
     font-size: 12px;
 }
 
+=======
+>>>>>>> main
 .hidden{
     display: none
 }

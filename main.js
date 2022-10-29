@@ -12,8 +12,12 @@ var clearBtn = document.querySelector('.clear-btn')
 
 //Event Listeners
 letsCookBtn.addEventListener('click', cookThis);
+<<<<<<< HEAD
 clearBtn.addEventListener('click', refreshFood);
 
+=======
+clearBtn.addEventListener('click', refreshFood)
+>>>>>>> main
 
 //Global Variables
 var sideDishes = [ 
@@ -77,7 +81,7 @@ function cookThis() {
     if (sidesButton.checked) {
         foodResult.innerText = `${sideDishes[randomSideDish]}!`
     } else if (mainsButton.checked) {
-        foodResult.innerText = `${mainDishes[randomMainDish]}!`
+        foodResult.innerText = `${mainDishes[randomMainDish]}`
     } else if (dessertsButton.checked) {
         foodResult.innerText = `${desserts[randomDessert]}!`
     } else {
