@@ -75,10 +75,8 @@ function cookThis() {
     console.log('dessert: ', randomDessert)
     if (sidesButton.checked) {
         foodResult.innerText = `${sideDishes[randomSideDish]}!`
-        // console.log(`${sideDishes[randomSideDish]}!`)
     } else if (mainsButton.checked) {
-        foodResult.innerText = `${mainDishes[randomMainDish]}!`
-        // console.log(`${mainDishes[randomMainDish]}!`)
+        foodResult.innerText = `${mainDishes[randomMainDish]}`
     } else if (dessertsButton.checked) {
         foodResult.innerText = `${desserts[randomDessert]}!`
     } else {
@@ -88,9 +86,14 @@ function cookThis() {
     mealIntro.classList.remove('hidden')
     foodResult.classList.remove('hidden')
     clearBtn.classList.remove('hidden')
-
-    
-
-        //add hidden to result image class.
 }
 
+function refreshFood() {
+   // as opposed to the function
+        // potImage.classList.add('hidden')
+        // mealIntro.classList.remove('hidden')
+        // foodResult.classList.remove('hidden')
+        // clearBtn.classList.remove('hidden')
+    //if clear //
+}
+    

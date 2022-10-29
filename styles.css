@@ -22,21 +22,36 @@ header {
     max-width: 100%;
 }
 
+button {
+background:  #0fb9b1;
+display: flex;
+width: 108px;
+border-radius: 4px;
+}
+
+
 .food-generator {
     display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-evenly;
     margin: 36px;
-   
 }
 
 div {
-    background-color: #95a5a6;
-    width: 35vh;
-    height: 35vh;
-    text-align: center;
+    background-color: white;
+    opacity: 88%;
+    width: 66vh;
+    height: 46vh;
+    text-align: left;
     margin: inherit;
+    padding: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+label {
+    font-size: 12px;
 }
 
 .hidden{
