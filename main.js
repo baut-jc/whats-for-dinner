@@ -70,16 +70,12 @@ var desserts = [
 var entireMeal = [] 
 
 //Functions
-function showClass() {
-    
-}
-
 function cookThis() {
     event.preventDefault()
     var randomSideDish = Math.floor(Math.random() * sideDishes.length);
     var randomMainDish = Math.floor(Math.random() * mainDishes.length);
     var randomDessert = Math.floor(Math.random() * desserts.length);
-    
+
     if (sidesButton.checked) {
         alert.classList.add('hidden')
         foodResult.innerText = `${sideDishes[randomSideDish]}!`
