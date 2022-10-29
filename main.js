@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 // Query Selectors
 var selections = document.getElementsByClassName('food-category');
 var sidesButton = document.querySelector('#side-dish');
@@ -15,6 +13,7 @@ var clearBtn = document.querySelector('.clear-btn')
 //Event Listeners
 letsCookBtn.addEventListener('click', cookThis);
 clearBtn.addEventListener('click', refreshFood);
+
 
 //Global Variables
 var sideDishes = [ 
@@ -99,5 +98,3 @@ function refreshFood() {
     //if clear //
 }
     
-
->>>>>>> Stashed changes

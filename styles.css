@@ -3,14 +3,12 @@
     padding: 0;
     font-family: 'Roboto', sans-serif, black;
     border: 1px solid black; 
-    
 }
 
 body {
-    /* background-image: url("assets/burger-friends.jpg"); */
     display: flex;
     height: 100vh;
-    background: url("assets/burger-friends.jpg");/* background-color: black; */
+    background: url("assets/burger-friends.jpg");
     background-size: cover;
     background-position: center;
     flex-direction: column;
@@ -25,12 +23,6 @@ header {
     max-width: 100%;
 }
 
-<<<<<<< Updated upstream
-form {
-=======
-/* .category-selection {
-    display: flex;
-} */
 button {
 background:  #0fb9b1;
 display: flex;
@@ -38,24 +30,16 @@ width: 108px;
 border-radius: 4px;
 }
 
+
 .food-generator {
->>>>>>> Stashed changes
     display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-evenly;
+    margin: 36px;
 }
 
 div {
-<<<<<<< Updated upstream
-    margin: 20;
-    padding: 50;
-    background-color: #95a5a6;
-    /* color: black; */
-    padding: 100px;
-    width: 100;
-    /* opacity: 0.3; */
-=======
     background-color: white;
     opacity: 88%;
     width: 66vh;
@@ -84,7 +68,6 @@ display: flex;
 
 .result-img {
     height: 1in;
->>>>>>> Stashed changes
 }
 
 /* div.background {
