@@ -12,12 +12,7 @@ var clearBtn = document.querySelector('.clear-btn')
 
 //Event Listeners
 letsCookBtn.addEventListener('click', cookThis);
-<<<<<<< HEAD
-clearBtn.addEventListener('click', refreshFood);
-
-=======
 clearBtn.addEventListener('click', refreshFood)
->>>>>>> main
 
 //Global Variables
 var sideDishes = [ 
