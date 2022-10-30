@@ -1,11 +1,11 @@
 // Query Selectors
 // Display
-var selections = document.getElementsByClassName('food-generator');
+var selections = document.getElementsByClassName('food-generator')
 // Button
-var sidesButton = document.querySelector('#side-dish');
-var mainsButton = document.querySelector('#main-dish');
-var dessertsButton = document.querySelector('#dessert');
-var entireMealButton = document.querySelector('#entire-meal');
+var sidesButton = document.querySelector('#side-dish')
+var mainsButton = document.querySelector('#main-dish')
+var dessertsButton = document.querySelector('#dessert')
+var entireMealButton = document.querySelector('#entire-meal')
 var radioBtns = document.querySelectorAll('.radio')
 var letsCookBtn = document.querySelector('#lets-cook')
 var saveBtn = document.querySelector('#save-btn')
@@ -17,7 +17,8 @@ var foodResult = document.querySelector('.food-result')
 var potImage = document.querySelector('.result-img')
 
 //Event Listeners
-letsCookBtn.addEventListener('click', cookThis);
+letsCookBtn.addEventListener('click', cookThis)
+saveBtn.addEventListener('click', saveMeal)
 clearBtn.addEventListener('click', clearForm)
 
 //Global Variables
@@ -68,9 +69,26 @@ var desserts = [
     'Croissants',
     'Eclairs'
 ];
-var entireMeal = [] 
+var mealForTheDay = [sides, main, desserts]
+
+// class mealPlan{
+//     constructor(dayOfTheWeek){
+//         this.side = dayOfTheWeek.side;
+//         this.main = dayOfTheWeek.main;
+//         this.dessert = dayOfTheWeek.dessert;
+//     }
+// }
 
 //Functions
+function saveMeal() {
+   cookThis()
+   console.log('cool code:', foodResult)
+   if (sidesButton.checked) {
+    sidesMealPlan.push(foodResult.innerText)
+    console.log(sidesMealPlan)
+   }
+}
+
 function cookThis() {
     event.preventDefault()
     var randomSideDish = Math.floor(Math.random() * sideDishes.length);
