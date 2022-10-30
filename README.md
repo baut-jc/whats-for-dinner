@@ -2,9 +2,9 @@
 # What's for Dinner? 
 
 ### Abstract:
-[PROJECT SPECS](https://frontend.turing.io/projects/module-1/dinner.html)
 [//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
 This app will allow you to genrate a random dish. it will help you decide what to make by selecting from the category of the sides, main dish, or desserts.
+Project specs can be found [here](https://frontend.turing.io/projects/module-1/dinner.html).
 
 ### Installation Instructions:
 [//]: <> (What steps does a person have to take to get your app cloned down and running?)
