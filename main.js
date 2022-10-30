@@ -5,7 +5,10 @@ var mainsButton = document.querySelector('#main-dish');
 var dessertsButton = document.querySelector('#dessert');
 var entireMealButton = document.querySelector('#entire-meal');
 var letsCookBtn = document.querySelector('#lets-cook')
-var potImage = document.querySelector('.result-img')
+var saveBtn = document.querySelector('#save-btn')
+var clearBtn = document.querySelector('#clear-btn')
+// Result
+var alert = document.querySelector('.alert')
 var mealIntro = document.querySelector('.intro-to-meal')
 var foodResult = document.querySelector('.food-result')
 var clearBtn = document.querySelector('.clear-btn')
@@ -87,6 +90,7 @@ function cookThis() {
     potImage.classList.add('hidden')
     mealIntro.classList.remove('hidden')
     foodResult.classList.remove('hidden')
+    saveBtn.classList.remove('hidden')
     clearBtn.classList.remove('hidden')
 
     
@@ -94,3 +98,12 @@ function cookThis() {
         //add hidden to result image class.
 }
 
+function clearForm() {
+    potImage.classList.remove('hidden')
+    mealIntro.classList.add('hidden')
+    foodResult.classList.add('hidden')
+    saveBtn.classList.add('hidden')
+    clearBtn.classList.add('hidden')
+    radioBtns.input.checked === false;
+    return radioBtns.input
+}  
