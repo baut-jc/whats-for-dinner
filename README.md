@@ -15,8 +15,9 @@ This app will allow you to genrate a random dish. it will help you decide what t
     Then, run open index.html
 
 ### Preview of App:
-[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
-<div style="position: relative; padding-bottom: NaN%; height: 0;"><iframe src="https://www.loom.com/embed/30dbc95745774d45b4ec967e6c5d9e1d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+[//]: <> 
+https://user-images.githubusercontent.com/109314475/198856346-c7ed259f-f459-4b1b-b8c3-6e140d8cd632.mp4
+
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
