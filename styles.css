@@ -84,7 +84,7 @@ div.result {
     text-align: center;
 }
 
-#clear-btn {
+#iclear-btn {
     float: right;
     background:  grey;
     align-self: flex-end;
