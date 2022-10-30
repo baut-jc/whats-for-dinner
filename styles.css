@@ -28,12 +28,6 @@ button {
     border-radius: 4px;
 }
 
-.button:hover {
-    background-color: grey;
-    color: white;
-  }
-
-
 .food-generator {
     display: flex;
     flex-direction: row;
@@ -84,7 +78,17 @@ div.result {
     text-align: center;
 }
 
-#iclear-btn {
+#save-btn{
+    float: left;
+    background:  grey;
+    align-self: flex-start;
+    float: right;
+    width: auto;
+    border-radius: 4px;
+}
+    
+
+#clear-btn {
     float: right;
     background:  grey;
     align-self: flex-end;
